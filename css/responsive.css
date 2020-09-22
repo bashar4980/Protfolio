@@ -1,0 +1,78 @@
+@media(max-width:992px){
+   .skill-innertext{
+       text-align: center;
+   }
+   .about-img{
+    text-align: center;
+}
+    
+}
+@media(max-width:768px){
+    .nav__menu ul{
+        display: block;
+    }
+    .nav__menu{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100vh;
+        background: cadetblue;
+        padding: 3.5rem 1.5rem 0;
+      
+        -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+        -webkit-transition: .5s;
+        transition: .5s;
+        z-index: 1000;
+    }
+    .nav__toggle{
+        display: block;
+    }
+    .nav__close{
+        display: block;
+    }
+    nav ul li a::before{
+       
+        left:4%;
+        height: 2px;
+      
+    }
+    nav ul .link a::before{
+      
+        left: 4%;
+        height: 2px;
+       
+    }
+   
+}
+
+.show{
+    right: 0;
+}
+@media(max-width:568px){
+    nav ul li a::before{
+        height: 2px;
+        left:5.6%;
+      
+    }
+    nav ul .link a::before{
+        height: 2px;
+        left: 5.6%;
+       
+    }
+    
+}
+
+@media(max-width:440px){
+    nav ul li a::before{
+       height: 2px;
+        left:7%;
+      
+    }
+    nav ul .link a::before{
+       height: 2px;
+        left: 7%;
+       
+    }
+}

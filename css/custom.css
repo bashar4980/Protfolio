@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+body a{
+text-decoration: none!important;
+}
+
+
+nav{
+    z-index: 100;
+    background: #ddd;
+}
+.header-section,.skill-section,.gallery-section{
+   background: #ddd;
+}
+#logo{
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(0,0,0 ,.7);
+    cursor: pointer;
+}
+
+
+nav ul li a{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0,0,0 ,1)!important;
+    z-index: 100;
+}
+li.done a{
+   
+    color: #78588C!important;
+}
+.nav-item{
+    position: relative;
+}
+
+
+
+.nav__menu li{
+    position: relative; 
+}
+nav ul li a::before{
+    content: "";
+    height: 3px;
+    width: 0px;
+    background:#78588C;
+    position: absolute;
+    top: 85%;
+    left: 19%;
+    transition: .75s;
+}
+
+nav ul li a:hover::before{
+    width: 53px;
+    
+}
+nav ul .link a::before{
+    content: "";
+    height: 3px;
+    width: 0px;
+    background:#78588C;
+    position: absolute;
+    top: 85%;
+    left: 19%;
+    transition: .75s;
+}
+
+nav ul .link a:hover::before{
+    width: 70px;
+    
+}
+.nav__toggle{
+    font-size: 20px;
+    margin-left: 0px;
+    display: none;
+}
+.nav__close{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/*--------header content part------------*/
+.content-img img{ 
+  
+    border-radius: 10% 10% 10% 10%;
+    
+   }
+   .header-text h1{
+       font-weight: bold;
+   }
+   .header-text #name{
+      color: #78588C;
+   }
+   .header-text h3{
+       font-weight: bold;
+   }
+   .social-icon i{
+       color:rgba(0,0,0 ,.7);
+   }
+   .social-icon i:hover{
+       color: #78588C;
+   }
+  
+   .common-btn{
+    padding: 10px 40px;
+    background-color:#78588C;
+    color: #fff!important;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+.common-btn::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+   
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    transition: .7s;
+}
+.common-btn:hover{
+    text-decoration: none!important;
+}
+.common-btn:hover::before{
+    width: 100%;
+}
+
+/*.............about section---------------*/
+
+.about-section  .about-img img{
+   
+    border-radius: 50%;
+
+}
+.about-section .about-text h4{
+    margin-top: 5rem;
+}
+/* skill section */
+.skill-section  p{
+    color: #646262;
+}
+.skill-content i{
+    color:#78588C;
+    margin:10px 0px;
+   
+}
+.skill-content i::before{
+    font-size: 60px;
+}
+.html5,.css3,.bootstrap5,.javScript,.jquery{
+    box-shadow: 0 4px 25px rgba(14,36,49,.25);
+    margin: 10px 0px;
+    border-radius: 10px 10px 10px 0px;
+}
+.skill-progress i{
+    font-size: 30px;
+    color: #78588C;
+}
+.skill-progress .text{
+    font-size: 18px;
+}
+.skill-progress .progress-bar{
+    background: #78588C;
+}
+.progress{
+    height: 12px!important;
+}
+/* feature section */
+.feature-section p{
+    color: #646262;
+}
+.feature-section i{
+    color: #78588C;
+}
+.feature-section i::before{
+    font-size: 60px;
+}
+/* gallery-section  */
+.gallery-img{
+    border-radius: 2%;
+    overflow: hidden;
+}
+.gallery-section p{
+    color: #646262;
+}
+.gallery-section img{
+    width: 100%;
+    border-radius: 2%;
+    transition: .5s;
+   
+   
+}
+.gallery-section img:hover{
+    transform: scale(1.1);
+   
+}
+/* fotter */
+.fotter{
+    background: #78588C;
+    color: #fff;
+}
+.fotter i{
+    color: #fff!important;
+}
